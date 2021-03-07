@@ -14,7 +14,7 @@ $body       = file_get_contents('php://input');
 switch($path[0])
 {
     case 'user':
-        if($metod === 'GET')
+        if($metod === 'POST')
         {
             autentica();
         }

@@ -1,0 +1,27 @@
+para: autenticacao
+metodo: POST
+url: /?path=user
+json: 	{
+		user: x,
+		senha: y
+	}
+obs: srv responderá com um token que deverá ser guardado no storage do lado do usuário.
+
+para: monitoramento de estado (on / off)
+metodo: GET
+url: device/{id:x}
+json:	{
+		token: x,
+		id_device: y
+	}		
+obs: o srv retornará um json com as informações do device.
+obs2: as informações do json podem ser passados pela url tbm caso desejem. Só alinharmos.
+
+para: add device
+metodo: POST
+url: /?path=device
+json:	{
+		token:w,
+		description:x,
+		place:y
+	}

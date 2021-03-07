@@ -1,0 +1,20 @@
+{
+    "device": [{
+        "id": 1,
+        "description":  "lamp1" ,
+        "place":        "sala" ,
+        "status":       false,
+        "criado_et":    "01/01/2001"
+    }],
+    "log": [{
+        "id":           "",
+        "id_device":    "",
+        "id_user":      "",
+        "on_em":        "",
+        "off_em":       ""
+    }],
+    "user": [{
+        "id":   "1",
+        "name": "Werbyston Lemos"
+    }]
+}

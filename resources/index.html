@@ -37,9 +37,6 @@
 			margin-top: 64px;
 
 		}
-		#container{
-
-		}
 		.dash{
 			overflow: auto;
 		}
@@ -113,7 +110,9 @@
 			font-size: 57px;
 		    margin-top: -27px;
 		}
-
+		.imgIcon{
+			height: 51px;
+		}
 		.trash:hover{
 			background-color: #d2d2d2;
 		}
@@ -173,22 +172,24 @@
 						<input type="text" name="search" placeholder="Pesquisar Dispositivo">
 					</div>
 				</div>
-
+				<div class="div-dash col-12">
+					<h4>Lista de Dispositivos</h4>
+				</div>
 				<!--Row Filha-->
-				<div class="row justify-content-start " id="devices-list">
+				<div class="row justify-content-start col-12" id="devices-list">
 
 					<div class="div-dash col-4">
 						<div class="card mb-4">
 							<div class="card card-block painel" data-toggle="modal" data-target="#statusLampada">
 								<div class="content-text text-center mb-0">
 									<span class="font-size-40 font-weight-100 m-0">
-										<img src="images/lampada">
+										<img class="imgIcon" src="assets/images/iconLampadaOFF.png">
 									</span>
 								</div>                         
 								<span class="ml-15 font-weight-400">Dispositivos Totais</span>
 							</div>
 							<div>
-								<img class="trash" src="assets/images/trash.png" alt="trash">
+								<img class="trash" src="assets/images/iconTrash.png" alt="trash">
 							</div>
 						</div>
 					</div>
@@ -198,13 +199,13 @@
 							<div class="card card-block painel" data-toggle="modal" data-target="#statusLampada">
 								<div class="content-text text-center mb-0">
 									<span class="font-size-40 font-weight-100 m-0">
-										<img src="images/lampada">
+										<img class="imgIcon" src="assets/images/iconLampadaOFF.png">
 									</span>
 								</div>                         
 								<span class="ml-15 font-weight-400">Dispositivos Totais</span>
 							</div>
 							<div>
-								<img class="trash" src="assets/images/trash.png" alt="trash">
+								<img class="trash" src="assets/images/iconTrash.png" alt="trash">
 							</div>
 						</div>
 					</div>
@@ -214,13 +215,13 @@
 							<div class="card card-block painel" data-toggle="modal" data-target="#statusLampada">
 								<div class="content-text text-center mb-0">
 									<span class="font-size-40 font-weight-100 m-0">
-										<img src="images/lampada">
+										<img class="imgIcon" src="assets/images/iconLampadaOFF.png">
 									</span>
 								</div>                         
 								<span class="ml-15 font-weight-400">Dispositivos Totais</span>
 							</div>
 							<div>
-								<img class="trash" src="assets/images/trash.png" alt="trash">
+								<img class="trash" src="assets/images/iconTrash.png" alt="trash">
 							</div>
 						</div>
 					</div>
@@ -230,13 +231,13 @@
 							<div class="card card-block painel" data-toggle="modal" data-target="#statusLampada">
 								<div class="content-text text-center mb-0">
 									<span class="font-size-40 font-weight-100 m-0">
-										<img src="images/lampada">
+										<img class="imgIcon" src="assets/images/iconLampadaOFF.png">
 									</span>
 								</div>                         
 								<span class="ml-15 font-weight-400">Dispositivos Totais</span>
 							</div>
 							<div>
-								<img class="trash" src="assets/images/trash.png" alt="trash">
+								<img class="trash" src="assets/images/iconTrash.png" alt="trash">
 							</div>
 						</div>
 					</div>
@@ -246,13 +247,13 @@
 							<div class="card card-block painel" data-toggle="modal" data-target="#statusLampada">
 								<div class="content-text text-center mb-0">
 									<span class="font-size-40 font-weight-100 m-0">
-										<img src="images/lampada">
+										<img class="imgIcon" src="assets/images/iconLampadaOFF.png">
 									</span>
 								</div>                         
 								<span class="ml-15 font-weight-400">Dispositivos Totais</span>
 							</div>
 							<div>
-								<img class="trash" src="assets/images/trash.png" alt="trash">
+								<img class="trash" src="assets/images/iconTrash.png" alt="trash">
 							</div>
 						</div>
 					</div>
@@ -262,13 +263,13 @@
 							<div class="card card-block painel" data-toggle="modal" data-target="#statusLampada">
 								<div class="content-text text-center mb-0">
 									<span class="font-size-40 font-weight-100 m-0">
-										<img src="images/lampada">
+										<img class="imgIcon" src="assets/images/iconLampadaOFF.png">
 									</span>
 								</div>                         
 								<span class="ml-15 font-weight-400">Dispositivos Totais</span>
 							</div>
 							<div>
-								<img class="trash" src="assets/images/trash.png" alt="trash">
+								<img class="trash" src="assets/images/iconTrash.png" alt="trash">
 							</div>
 						</div>
 					</div>
@@ -282,7 +283,7 @@
 	</div> <!--End Corpo-->
 
   
-  <!-- Modal -->
+  <!-- Modal Mostrar Device Status-->
   <div class="modal fade" id="statusLampada" tabindex="-1" role="dialog" aria-labelledby="statusLampada" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 	  <div class="modal-content">
@@ -293,7 +294,7 @@
 		  </button>
 		</div>
 		<div class="modal-body">
-		  <div class="div-iconStatus"><img src="assets/images/lampadaON.png" alt="ON">
+		  <div class="div-iconStatus"><img src="assets/images/modalLampadaON.png" alt="ON">
 			<span class="statusDevice">ON</span>
 		</div>
 		</div>
@@ -302,7 +303,7 @@
 	  </div>
 	</div>
   </div>
-
+<!--Fim Modal Device Status-->
 
 	<footer>
 		<div style="text-align: center; margin-top: 5px;">

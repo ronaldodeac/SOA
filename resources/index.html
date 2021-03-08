@@ -15,6 +15,7 @@
 
 
 
+
 	<style type="text/css">
 		*{
 			padding: 0px;
@@ -71,6 +72,51 @@
 		.font-weight-100{
 			font-weight: 100 !important;
 		}
+		.div-iconStatus{
+			text-align: center;
+		}
+		.div-iconStatus img{
+			height: 10em;
+			transform: rotate(90deg);
+		}
+		.div-iconStatus span{
+			font-size: 4em;
+			padding: 0.4em;
+			float: right;
+			color: #444242;
+			margin-right: 40px;
+		}
+		.statusHeader{
+			border: none;
+		}
+		.statusHeader h3{
+			color: #828080;
+		}
+		.div-trash{
+			cursor: pointer;
+		}
+		.trash{
+			height: 15px;
+			top: 9px;
+			right: 9px;
+			position: absolute;
+			cursor: pointer;
+			border-radius: 6px;
+		}
+		#addButton{
+			height: 3em;
+			width: 3em;
+			border-radius: 2em;
+			cursor: pointer;
+		}
+		#addButton span[name="addDevice"]{
+			font-size: 57px;
+		    margin-top: -27px;
+		}
+
+		.trash:hover{
+			background-color: #d2d2d2;
+		}
 	</style>
 </head>
 <body>
@@ -118,8 +164,8 @@
 			<!--Row Pai-->
 			<div class="row" style="max-height: 800px;">
 				<div class="div-dash col-2">
-					<div class="card mb-6">
-						<input type="button" name="addDevice">
+					<div class="card mb-6" id="addButton">
+						<span name="addDevice">+</span>
 					</div>
 				</div>
 				<div class="div-dash col-7">
@@ -133,67 +179,100 @@
 
 					<div class="div-dash col-4">
 						<div class="card mb-4">
-							<div class="card card-block painel">
+							<div class="card card-block painel" data-toggle="modal" data-target="#statusLampada">
 								<div class="content-text text-center mb-0">
-									<div style="position: absolute; right: 15px; top: 15px">
-										{icon}
-									</div>
 									<span class="font-size-40 font-weight-100 m-0">
 										<img src="images/lampada">
 									</span>
-								</div>                          
+								</div>                         
 								<span class="ml-15 font-weight-400">Dispositivos Totais</span>
+							</div>
+							<div>
+								<img class="trash" src="assets/images/trash.png" alt="trash">
 							</div>
 						</div>
 					</div>
+					
 					<div class="div-dash col-4">
 						<div class="card mb-4">
-							<div class="card card-block painel">
+							<div class="card card-block painel" data-toggle="modal" data-target="#statusLampada">
 								<div class="content-text text-center mb-0">
-									<div style="position: absolute; right: 15px; top: 15px">
-										{icon}
-									</div>
 									<span class="font-size-40 font-weight-100 m-0">
 										<img src="images/lampada">
 									</span>
-								</div>                          
+								</div>                         
 								<span class="ml-15 font-weight-400">Dispositivos Totais</span>
+							</div>
+							<div>
+								<img class="trash" src="assets/images/trash.png" alt="trash">
 							</div>
 						</div>
 					</div>
-
+					
 					<div class="div-dash col-4">
 						<div class="card mb-4">
-							<div class="card card-block painel">
+							<div class="card card-block painel" data-toggle="modal" data-target="#statusLampada">
 								<div class="content-text text-center mb-0">
-									<div style="position: absolute; right: 15px; top: 15px">
-										{icon}
-									</div>
 									<span class="font-size-40 font-weight-100 m-0">
 										<img src="images/lampada">
 									</span>
-								</div>                          
+								</div>                         
 								<span class="ml-15 font-weight-400">Dispositivos Totais</span>
+							</div>
+							<div>
+								<img class="trash" src="assets/images/trash.png" alt="trash">
 							</div>
 						</div>
 					</div>
-
+					
 					<div class="div-dash col-4">
 						<div class="card mb-4">
-							<div class="card card-block painel">
+							<div class="card card-block painel" data-toggle="modal" data-target="#statusLampada">
 								<div class="content-text text-center mb-0">
-									<div style="position: absolute; right: 15px; top: 15px">
-										{icon}
-									</div>
 									<span class="font-size-40 font-weight-100 m-0">
 										<img src="images/lampada">
 									</span>
-								</div>                          
+								</div>                         
 								<span class="ml-15 font-weight-400">Dispositivos Totais</span>
+							</div>
+							<div>
+								<img class="trash" src="assets/images/trash.png" alt="trash">
 							</div>
 						</div>
 					</div>
-
+					
+					<div class="div-dash col-4">
+						<div class="card mb-4">
+							<div class="card card-block painel" data-toggle="modal" data-target="#statusLampada">
+								<div class="content-text text-center mb-0">
+									<span class="font-size-40 font-weight-100 m-0">
+										<img src="images/lampada">
+									</span>
+								</div>                         
+								<span class="ml-15 font-weight-400">Dispositivos Totais</span>
+							</div>
+							<div>
+								<img class="trash" src="assets/images/trash.png" alt="trash">
+							</div>
+						</div>
+					</div>
+					
+					<div class="div-dash col-4">
+						<div class="card mb-4">
+							<div class="card card-block painel" data-toggle="modal" data-target="#statusLampada">
+								<div class="content-text text-center mb-0">
+									<span class="font-size-40 font-weight-100 m-0">
+										<img src="images/lampada">
+									</span>
+								</div>                         
+								<span class="ml-15 font-weight-400">Dispositivos Totais</span>
+							</div>
+							<div>
+								<img class="trash" src="assets/images/trash.png" alt="trash">
+							</div>
+						</div>
+					</div>
+					
 
 				</div>
 				<!--End Row Filha-->
@@ -202,6 +281,29 @@
 		</div><!--End Container-->
 	</div> <!--End Corpo-->
 
+  
+  <!-- Modal -->
+  <div class="modal fade" id="statusLampada" tabindex="-1" role="dialog" aria-labelledby="statusLampada" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		<div class="modal-header statusHeader">
+			<h3 class="modal-title">{Device Name}</h3>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <div class="div-iconStatus"><img src="assets/images/lampadaON.png" alt="ON">
+			<span class="statusDevice">ON</span>
+		</div>
+		</div>
+		<div class="modal-footer"></div>
+	  </div>
+	  </div>
+	</div>
+  </div>
+
+
 	<footer>
 		<div style="text-align: center; margin-top: 5px;">
 			<span>Este é o Rodapé</span>
@@ -209,5 +311,11 @@
 	</footer>
 
 
+	<script>
+		//Remover Item
+		$(".trash").click(function(){
+			($(this).closest('.div-dash')).remove();
+		});
+	</script>
 </body>
 </html>
